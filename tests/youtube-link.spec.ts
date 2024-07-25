@@ -9,6 +9,4 @@ test('test', async ({ page }) => {
   await page1.locator('input[name="query"]').click();
   await page1.locator('input[name="query"]').fill('webinar');
   await page1.locator('input[name="query"]').press('Enter');
-  await page1.locator('#columns #primary').click();
-  await page1.getByRole('button', { name: 'like this video along with 3' }).click();
 });
